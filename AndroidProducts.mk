@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pe_venus.mk
+    $(LOCAL_DIR)/aosp_venus.mk
 
 COMMON_LUNCH_CHOICES := \
-    pe_venus-user \
-    pe_venus-userdebug \
-    pe_venus-eng
+    aosp_venus-user \
+    aosp_venus-userdebug \
+    aosp_venus-eng

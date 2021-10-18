@@ -15,6 +15,9 @@ DEVICE_PATH := device/xiaomi/venus
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := venus
 
+# Display
+TARGET_SCREEN_DENSITY := 420
+
 # HIDL
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest.xml
 
