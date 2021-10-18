@@ -22,3 +22,16 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+PRODUCT_ADB_KEYS := $(LOCAL_PATH)/venus_debug.pub
+
+ifeq ($(wildcard $(PRODUCT_ADB_KEYS)),)
+  $(warning ========================)
+  $(warning The adb key for this release)
+  $(warning )
+  $(warning   $(PRODUCT_ADB_KEYS))
+  $(warning )
+  $(warning does not exist. Most likely something has changed and a new adb key needs to be generated.)
+  $(warning ========================)
+  $(error done)
+endif
