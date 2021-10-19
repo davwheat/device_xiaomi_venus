@@ -23,3 +23,6 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest.xml
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := venus
+
+# Force permissive kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
